@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title>types of graphs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_buttons.css"/>
+        <link rel="stylesheet" href="CSS_twotable.css"/>
+        <link rel="stylesheet" href="CSS_header.css"/>
+	<link rel="stylesheet" href="CSS_gallery.css"/>
+
+
+
+    </head>
+    <body>
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="1_home.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="1_home.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <div class="heading">
+            <h1 style="margin-left: 15%">Types of Graphs</h1>
+            <p style="margin-left: 15%"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel purus sed ex laoreet gravida et quis quam.</i></p>
+        </div>
+
+<div class="row">
+	<div class="column" style="background-color:#ffffff;">
+		<div class="container">
+  			<div class="mySlides">
+    				<div class="numbertext">1 / 13</div>
+    				<img src="TG_null_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">2 / 13</div>
+    				<img src="TG_simple_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">3 / 13</div>
+    				<img src="TG_multigraph.png" style="width:100%">
+  			</div>
+    
+  			<div class="mySlides">
+    				<div class="numbertext">4 / 13</div>
+    				<img src="TG_pseudo_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">5 / 13</div>
+    				<img src="TG_directed_graph.png" style="width:100%">
+  			</div>
+    
+  			<div class="mySlides">
+    				<div class="numbertext">6 / 13</div>
+    				<img src="TG_undirected_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">7 / 13</div>
+    				<img src="TG_connected_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">8 / 13</div>
+    				<img src="TG_disconnected_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">9 / 13</div>
+    				<img src="TG_regular_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">10 / 13</div>
+    				<img src="TG_complete_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">11 / 13</div>
+    				<img src="TG_cycle_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">12 / 13</div>
+    				<img src="TG_bipartite_graph.png" style="width:100%">
+  			</div>
+
+  			<div class="mySlides">
+    				<div class="numbertext">13 / 13</div>
+    				<img src="TG_bipartite_graph.png" style="width:100%">
+  			</div>
+    
+  			<a class="prev" onclick="plusSlides(-1)">❮</a>
+  			<a class="next" onclick="plusSlides(1)">❯</a>
+
+  			<div class="caption-container">
+    				<p id="caption"></p>
+  			</div>
+
+  			<div class="rowo">
+    				<div class="col">
+      					<img class="demo cursor" src="TG_null_graph.png" style="width:100%" onclick="currentSlide(1)" alt="Null Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_simple_graph.png" style="width:100%" onclick="currentSlide(2)" alt="Simple Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_multigraph.png" style="width:100%" onclick="currentSlide(3)" alt="Multigraph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_pseudo_graph.png" style="width:100%" onclick="currentSlide(4)" alt="Pseudo Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_directed_graph.png" style="width:100%" onclick="currentSlide(5)" alt="Directed Graph">
+    				</div>    
+    				<div class="col">
+      					<img class="demo cursor" src="TG_undirected_graph.png" style="width:100%" onclick="currentSlide(6)" alt="Undirected Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_connected_graph.png" style="width:100%" onclick="currentSlide(7)" alt="Connected Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_disconnected_graph.png" style="width:100%" onclick="currentSlide(8)" alt="Disconnected Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_regular_graph.png" style="width:100%" onclick="currentSlide(9)" alt="Regular Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_complete_graph.png" style="width:100%" onclick="currentSlide(10)" alt="Complete Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_cycle_graph.png" style="width:100%" onclick="currentSlide(11)" alt="Cycle Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_bipartite_graph.png" style="width:100%" onclick="currentSlide(12)" alt="Bipartite Graph">
+    				</div>
+    				<div class="col">
+      					<img class="demo cursor" src="TG_bipartite_graph.png" style="width:100%" onclick="currentSlide(13)" alt="Bipartite Graph">
+    				</div>
+			</div>
+		</div>
+  	</div>
+	<div class="column" style="background-color:#ffffff;">
+		<iframe src="https://graphonline.ru/en/?fbclid=IwAR3ULGlU80L2EVdce6vKm2TX7UMIPEvgZDQDKAeHCYeU-pSqk-Ow0ZU6fsE" width=100% height="650px"></iframe>
+  	</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </body>
+</html>
+
+
+

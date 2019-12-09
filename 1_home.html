@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <title>Graphs and Trees</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_buttons.css"/>
+        <link rel="stylesheet" href="CSS_twotable.css"/>
+	<link rel="stylesheet" href="CSS_animate.css"/>
+
+	<style>
+		.hoverTable{
+			width: 70%; 
+			border-collapse:collapse; 
+			font-size: 12px;
+		}
+		.hoverTable td{ 
+			padding:5px; border:#ffffff 3px solid; color: #ffffff;
+		}
+		/* Define the default color for all the table rows */
+		.hoverTable tr{
+			background: #000000; 
+		}
+		/* Define the hover highlight color for the table row */
+		.hoverTable tr:hover {
+			background-color: #259400;
+			cursor: pointer; 
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+	</style>
+    </head>
+    
+    
+    <body style="background-image:url(BG_worldmap.png); background-size: cover">
+        
+	<script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+	</script>
+
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="1_home.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="1_home.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+
+	<br><br><br><br><br><br><br>
+	
+	<center>
+	<div class="row">
+	<div class="column">
+		<img src="LBL_graphos.png" style="width:70%">
+		<table class="hoverTable" style="opacity: 0.8">
+			<tr>
+				<td>TERMINAL</td>
+				<td>FLIGHT</td>
+				<td>DESTINATION</td>
+				<td>TIME</td>
+				<td>GATE</td>
+				<td>REMARK</td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>01</td>
+				<td>INTRODUCTION</td>
+				<td>1204H</td>
+				<td>01</td>
+				<td>01</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>02</td>
+				<td><a href="3_types_of_graphs.html">TYPES OF GRAPHS</a></td>
+				<td>0912H</td>
+				<td>02</td>
+				<td>02</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>03</td>
+				<td><a href="4_eulerian_graph.html">EULERIAN & HAMILTONIAN</a></td>
+				<td>0903H</td>
+				<td>03</td>
+				<td>03</td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td>04</td>
+				<td>WEIGHTED GRAPHS</td>
+				<td>0218H</td>
+				<td>04</td>
+				<td>04</td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td>05</td>
+				<td><a href="6_isomorphism.html">ISOMORPHISM</td>
+				<td>1013H</td>
+				<td>05</td>
+				<td>05</td>
+			</tr>
+			<tr>
+				<td>07</td>
+				<td>07</td>
+				<td><a href="7_planar_non.html">PLANAR & NON-PLANAR</a></td>
+				<td>1230H</td>
+				<td>07</td>
+				<td>07</td>
+			</tr>
+			<tr>
+				<td>08</td>
+				<td>08</td>
+				<td>GRAPH COLORING</td>
+				<td>0901H</td>
+				<td>08</td>
+				<td>08</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<div class="column">
+		<img src="LBL_treesu.png" style="width:70%">
+		<table class="hoverTable" style="opacity: 0.8">
+			<tr>
+				<td>TERMINAL</td>
+				<td>FLIGHT</td>
+				<td>DESTINATION</td>
+				<td>TIME</td>
+				<td>GATE</td>
+				<td>REMARK</td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>01</td>
+				<td>INTRODUCTION</td>
+				<td>01</td>
+				<td>01</td>
+				<td>01</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>02</td>
+				<td>TYPES OF...</td>
+				<td>02</td>
+				<td>02</td>
+				<td>02</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>03</td>
+				<td>PLANAR & NON...</td>
+				<td>03</td>
+				<td>03</td>
+				<td>03</td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td>04</td>
+				<td>ISOMORPHISM</td>
+				<td>04</td>
+				<td>04</td>
+				<td>04</td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td>05</td>
+				<td>HOMOMORPHISM</td>
+				<td>05</td>
+				<td>05</td>
+				<td>05</td>
+			</tr>
+			<tr>
+				<td>06</td>
+				<td>06</td>
+				<td>EULERIAN...</td>
+				<td>06</td>
+				<td>06</td>
+				<td>06</td>
+			</tr>
+			<tr>
+				<td>07</td>
+				<td>07</td>
+				<td>WEIGHTED...</td>
+				<td>07</td>
+				<td>07</td>
+				<td>07</td>
+			</tr>
+			<tr>
+				<td>08</td>
+				<td>08</td>
+				<td>GRAPH COLORING</td>
+				<td>08</td>
+				<td>08</td>
+				<td>08</td>
+			</tr>
+		</table>
+
+	</div>
+	</div>
+	</center>
+
+
+    </body>
+</html>
+

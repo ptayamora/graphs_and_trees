@@ -1,0 +1,62 @@
+.btn {
+  border-radius: 4px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 100%;
+  cursor: pointer;
+  width: 30%;
+  cursor: pointer;
+}
+
+.graph {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.graph:hover {
+  border-color: #C71585;
+  color: #C71585;
+}
+
+.tree {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.tree:hover {
+  border-color: #008080;
+  color: #008080;
+}
+  
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .button {
+  position: absolute;
+  top: 90.5%; /*changed*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 45px;/*changed*/
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .button:hover {
+  background-color: black;
