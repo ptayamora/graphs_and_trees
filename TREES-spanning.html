@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>Spanning Trees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_trees.css"/>
+
+    </head>
+    <body style="background-image:url(pinkmap.png); background-size: cover">
+    
+    <script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+	</script>
+    
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <br><br><br>
+        
+        <div class=trees-intro>
+            <p style="font-size: 300%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"><img src = pinpoint.png width=5% height=auto style="float:middle" class=floating> SPANNING TREES</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">A spanning tree of a connected undirected graph <span id=stressout>G</span> is a tree that minimally includes all of the vertices of <span id=stressout>G</span>. A graph may have many spanning trees.</p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Example: </p>
+            <center><img src="graph_in_span.jpg" width=45% height="auto"></center>
+            <center><img src="spanning_tree.jpg" width=45% height="auto"></center>
+            <p class=content style="font-size: 150%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Minimum Spanning Tree </p>
+            <p class="content" style="padding: 0px 25%; text-align:center">A spanning tree with assigned weight less than or equal to the weight of every possible spanning tree of a weighted, connected and undirected graph <span id=stressout>G</span>, it is called minimum spanning tree (MST). The weight of a spanning tree is the sum of all the weights assigned to each edge of the spanning tree.</p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Example: </p>
+            <center><img src="minimum_spanning_tree.jpg" width=45% height="auto"></center>
+            <p class=content style="font-size: 150%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Kruskal's Algorithm </p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Kruskal's algorithm is a greedy algorithm that finds a minimum spanning tree for a connected weighted graph. It finds a tree of that graph which includes every vertex and the total weight of all the edges in the tree is less than or equal to every possible spanning tree.</p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Algorithm</p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span id=stressout>Step 1</span> − Arrange all the edges of the given graph <span id=stressout>G(V,E)</span> in non-decreasing <span id=align>order as per their edge weight.</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span id=stressout>Step 2</span> − Choose the smallest weighted edge from the graph and check if it <span id=align>forms a cycle with the spanning tree formed so far.</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span id=stressout>Step 3</span> − If there is no cycle, include this edge to the spanning tree else <span id=align>discard it.</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span id=stressout>Step 4</span> − Repeat <span id=stressout>Step 2</span> and <span id=stressout>Step 3</span> until <span id=stressout>(V−1)</span> number of edges are left in <span id=align>the spanning tree.</span></p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Problem</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Suppose we want to find minimum spanning tree for the following graph G using Kruskal’s algorithm.</p>
+            <center><img src="kruskal_problem.jpg" width=45% height="auto"></center>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Solution</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">From the above graph we construct the following table −</p>
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=30%>
+                <tr>
+                    <th>Edge Number</th>
+                    <th>Vertex Pair</th>
+                    <th>Edge Weight</th>
+                </tr>
+                <tr>
+                    <td>E1</td>
+                    <td>(a, b)</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>E2</td>
+                    <td>(a, c)</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>E3</td>
+                    <td>(a, d)</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>E4</td>
+                    <td>(b, c)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>E5</td>
+                    <td>(b, e)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>E6</td>
+                    <td>(b, f)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>E7</td>
+                    <td>(c, d)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>E8</td>
+                    <td>(d, e)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>E9</td>
+                    <td>(d, f)</td>
+                    <td>14</td>
+                </tr>
+            </table>
+            <p class="content" style="padding: 0px 25%; text-align:center">Now we will rearrange the table in ascending order with respect to Edge weight −</p>
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=30%>
+                <tr>
+                    <th>Edge Number</th>
+                    <th>Vertex Pair</th>
+                    <th>Edge Weight</th>
+                </tr>
+                <tr>
+                    <td>E4</td>
+                    <td>(b, c)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>E7</td>
+                    <td>(c, d)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>E8</td>
+                    <td>(d, e)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>E5</td>
+                    <td>(b, e)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>E6</td>
+                    <td>(b, f)</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>E2</td>
+                    <td>(a, c)</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>E3</td>
+                    <td>(a, d)</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>E9</td>
+                    <td>(d, f)</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>E1</td>
+                    <td>(a, b)</td>
+                    <td>20</td>
+                </tr>
+            </table>
+            <br><center><img src="kruskal_adding_vertex_edge.gif" width=auto height=50%></center>
+            <p class="content" style="padding: 0px 25%; text-align:center">Since we got all the <span id=stressout>5</span> edges in the last figure, we stop the algorithm and this is the minimal spanning tree and its total weight is <span id=stressout>(1+2+3+5+9)=20</span>.</p>
+            <p class=content style="font-size: 150%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Prim's Algorithm </p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Prim's algorithm, discovered in <span id=stressout>1930</span> by mathematicians, Vojtech Jarnik and Robert C. Prim, is a greedy algorithm that finds a minimum spanning tree for a connected weighted graph. It finds a tree of that graph which includes every vertex and the total weight of all the edges in the tree is less than or equal to every possible spanning tree. Prim’s algorithm is faster on dense graphs.</p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Algorithm</p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span style="font-size:200%">✈</span> Initialize the minimal spanning tree with a single vertex, randomly chosen from the graph.</p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span style="font-size:200%">✈</span> Repeat steps <span id=stressout>3 and 4</span> until all the vertices are included in the tree.</p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span style="font-size:200%">✈</span> Select an edge that connects the tree with a vertex not yet in the tree, <span id=align>so that the weight of the edge is minimal and inclusion of the edge </span><span id=align>does not form a cycle.</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:left"><span style="font-size:200%">✈</span> Add the selected edge and the vertex that it connects to the tree.</p> 
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Problem</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Suppose we want to find minimum spanning tree for the following graph G using Prim’s algorithm.</p>
+            <center><img src="prim.jpg" width=45% height=auto></center>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Solution</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Here we start with the vertex ‘a’ and proceed.</p>
+            <center><img src="prim_vertex_a_added.gif" width=30% height=auto></center>
+            <p class="content" style="padding: 0px 25%; text-align:center">This is the minimal spanning tree and its total weight is <span id=stressout>(1+2+3+5+9)=20</span></p>
+            <p style="float:left;padding-left:15%"><a href=TREES-rooted.html>Prev lesson</a></p><br><br><br>
+        </div>
+        
+        <br><br><br>
+            
+        <footer>
+            <p style="color: 48689a; font-family: 'abril_fatfaceregular';font-size: 100%; text-align: center;">© 2019</p>
+        </footer>
+    </body>
+</html>

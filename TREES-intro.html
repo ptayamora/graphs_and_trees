@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Introduction to Trees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_trees.css"/>
+
+    </head>
+    <body style="background-image:url(pinkmap.png); background-size: cover">
+    
+    <script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+	</script>
+    
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <br><br><br>
+        
+        <div class=trees-intro>
+            <p style="font-size: 300%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"><img src = pinpoint.png width=5% height=auto style="float:middle" class=floating> INTRODUCTION TO TREES</p>
+            <img src="trees.gif" width=20% height="auto" style="float:right;padding-right:15%">
+            <p class=content style="padding-left: 10%"><span style="font-size:200%">✈</span> Tree is a discrete structure that represents hierarchical relationships between <span style="padding-left:5%">individual elements or nodes. A tree in which a parent has no more than two</span> <span style="padding-left:5%">children is called a binary tree.</span></p>
+            <p class=content style="padding-left: 10%"><span style="font-size:200%">✈</span> A tree is a collection of nodes (dots) called a graph with connecting edges <span style="padding-left:5%">(lines) between the nodes. All nodes are connected by lines.</span></p>
+            <img src="Tree-Data-Structure.gif" width=35% height="auto" style="float:left;padding-left:10%;padding-top:2%">
+            <p class=content style="padding-right: 10%; padding-left:47%"><span style="font-size:200%">✈</span> A Tree is a connected acyclic undirected graph. There is a <span id=align>unique path between every pair of vertices in <span id=stressout>G</span>. A tree </span><span id=align>with N number of vertices contains <span id=stressout>(N−1)</span> number of </span><span id=align>edges. The vertex which is of  <span id=stressout>0</span> degree is called root of </span><span id=align>the tree. The vertex which is of <span id=stressout>1</span> degree is called leaf </span><span id=align>node of the tree and the degree of an internal node is at </span><span id=align>least  <span id=stressout>2</span>.</span></p>
+            <br><p style="font-size: 150%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"> PROPERTIES OF TREES</p>
+            <p class="content" style="padding: 0px 30%"><span id=stressout>1. </span> There is only one path between each pair of vertices of a <span style="padding-left:10%">tree.</span></p>
+            <p class="content" style="padding: 0px 30%"><span id=stressout>2. </span> If a graph <span id=stressout>G</span> there is one and only one path between <span style="padding-left:10%">each pair of vertices <span id=stressout>G</span> is a tree.</span></p>
+            <p class="content" style="padding: 0px 30%"><span id=stressout>3. </span> A tree <span id=stressout>T</span> with <span id=stressout>n</span> vertices has <span id=stressout>n-1</span> edges.</p>
+            <p class="content" style="padding: 0px 30%"><span id=stressout>4. </span> A graph is a tree if and only if it a minimal connected.</p>
+            <br><center><div style="background-color: rgba(134,134,134,0.6)"><iframe width="560" height="315" src="https://www.youtube.com/embed/zEQZpTizgLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></center>
+            <br><p style="float:right;padding-right:15%"><a href=TREES-centers.html>Next lesson</a></p>
+            <br><br><br><br><br><br>
+        </div>
+        
+        <br><br><br>
+            
+        <footer>
+            <p style="color: 48689a; font-family: 'abril_fatfaceregular';font-size: 100%; text-align: center;">© 2019</p>
+        </footer>
+    </body>
+</html>

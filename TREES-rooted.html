@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Rooted Trees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_trees.css"/>
+
+    </head>
+    <body style="background-image:url(pinkmap.png); background-size: cover">
+    
+    <script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+	</script>
+    
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <br><br><br>
+        
+        <div class=trees-intro>
+            <p style="font-size: 300%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"><img src = pinpoint.png width=5% height=auto style="float:middle" class=floating> ROOTED TREES</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">A rooted tree <span id=stressout>G</span> is a connected acyclic graph with a special node that is called the root of the tree and every edge directly or indirectly originates from the root. An ordered rooted tree is a rooted tree where the children of each internal vertex are ordered. If every internal vertex of a rooted tree has not more than m children, it is called an m-ary tree. If every internal vertex of a rooted tree has exactly m children, it is called a full m-ary tree. If <span id=stressout>m=2</span>, the rooted tree is called a binary tree.</p>
+            <center><img src="Tree-Data-Structure.gif" width=45% height="auto"></center>
+            <p class=content style="font-size: 150%; padding: 0px 25%; text-align:center; font-family: 'abril_fatfaceregular'; font-weight: bold">BINARY SEARCH TREE</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">Binary Search tree is a binary tree which satisfies the following property −</p>
+            <p class="content" style="padding: 0px 25%; text-align:center"><span style="font-size:200%">✈</span>          <span id=stressout>X</span>  in left sub-tree of vertex <span id=stressout>V,Value(X)≤Value(V)</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:center"><span style="font-size:200%">✈</span>          <span id=stressout>Y</span>  in right sub-tree of vertex <span id=stressout>V,Value(Y)≥Value(V)</span></p>
+            <p class="content" style="padding: 0px 25%; text-align:center">So, the value of all the vertices of the left sub-tree of an internal node <span id=stressout>V</span> are less than or equal to <span id=stressout>V</span> and the value of all the vertices of the right sub-tree of the internal node <span id=stressout>V</span> are greater than or equal to <span id=stressout>V</span>. The number of links from the root node to the deepest node is the height of the Binary Search Tree.</p>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">EXAMPLE: </p>
+            <center><img src="binary_search_tree.jpg" width=45% height="auto"></center>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Algorithm to search for a key in BST </p>
+            <div style="background-color: rgba(134,134,134,0.6)">
+                <p class="content" style="padding: 0px 30%; text-align:left">BST_Search(x, k)<br>if ( x = NIL or k = Value[x] )<br><span id=align>return x;</span><br>if ( k &lt; Value[x])<br><span id=align>return BST_Search (left[x], k); </span><br>else  <br><span id=align>return BST_Search (right[x], k)</span></p>
+            </div>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Complexity of Binary search tree</p>
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=50%>
+                <tr>
+                    <th></th>
+                    <th>Average Case</th>
+                    <th>Worse Case</th>
+                </tr>
+                <tr>
+                    <td>Space Complexity</td>
+                    <td>O(n)</td>
+                    <td>O(n)</td>
+                </tr>
+                <tr>
+                    <td>Search Complexity</td>
+                    <td>O(log n)</td>
+                    <td>O(n)</td>
+                </tr>
+                <tr>
+                    <td>Insertion Complexity</td>
+                    <td>O(log n)</td>
+                    <td>O(n)</td>
+                </tr>
+                <tr>
+                    <td>Deletion Complexity</td>
+                    <td>O(log n)</td>
+                    <td>O(n)</td>
+                </tr>
+            </table>
+            <p class=content style="font-size: 120%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Simulation for Binary Search Tree</p>
+            <iframe src="https://visualgo.net/bn/bst" width=100% height=100%></iframe>
+            <br><br>
+            <p style="float:left;padding-left:15%"><a href=TREES-labeled.html>Prev lesson</a></p>
+            <p style="float:right;padding-right:15%"><a href=TREES-spanning.html>Next lesson</a></p>
+            <br><br><br><br>
+        </div>
+        
+        <br><br><br>
+            
+        <footer>
+            <p style="color: 48689a; font-family: 'abril_fatfaceregular';font-size: 100%; text-align: center;">© 2019</p>
+        </footer>
+    </body>
+</html>

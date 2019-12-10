@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(255,255,255,0.9);
+    bottom: 0;
+    display: block;   
+}
+
+.content {
+    font-family: 'cocogoose_ultralight';
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#stressout {
+    font-family: 'abril_fatfaceregular';
+    font-size: 125%;
+}
+
+#align{
+    padding-left:10%;
+}
+
+.trees-intro {
+    background-color: rgba(173,184,214,0.8);
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}

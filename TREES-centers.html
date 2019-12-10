@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Centers & Bi-Centers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_trees.css"/>
+
+    </head>
+    <body style="background-image:url(pinkmap.png); background-size: cover">
+    
+    <script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+        
+        function showDiv() {
+            document.getElementById('answerDiv1').style.display = "block";
+            document.getElementById('answerDiv2').style.display = "block";
+            document.getElementById('answerDiv3').style.display = "block";
+        }
+        
+        function hideDiv() {
+            document.getElementById('answerDiv1').style.display = "none";
+            document.getElementById('answerDiv2').style.display = "none";
+            document.getElementById('answerDiv3').style.display = "none";
+        }
+	</script>
+    
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <br><br><br>
+        
+        <div class=trees-intro>
+            <p style="font-size: 300%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"><img src = pinpoint.png width=5% height=auto style="float:middle" class=floating> CENTER & BI-CENTERS OF A TREE</p>
+            <p class="content" style="padding: 0px 25%; text-align:center">The center of a tree is a vertex with minimal eccentricity. The eccentricity of a vertex <span id="stressout">X</span> in a tree <span id="stressout">G</span> is the maximum distance between the vertex <span id="stressout">X</span> and any other vertex of the tree. The maximum eccentricity is the tree diameter. If a tree has only one center, it is called Central Tree and if a tree has only more than one centers, it is called Bi-central Tree. Every tree is either central or bi-central.</p>
+            <p class=content style="font-size: 150%; padding: 0px 25%; text-align:center; font-family: 'abril_fatfaceregular'; font-weight: bold">ALGORITHM TO FIND CENTER AND BI-CENTERS OF A TREE</p>
+            <p class=content style="padding: 0px 25%; text-align:center">Step <span id=stressout>1</span> − Remove all the vertices of degree <span id=stressout>1</span> from the given tree and also remove their incident edges.</p>
+            <p class=content style="padding: 0px 25%; text-align:center">Step <span id=stressout>2</span> − Repeat step <span id=stressout>1</span> until either a single vertex or two vertices joined by an edge is left. If a single vertex is left then it is the center of the tree and if two vertices joined by an edge is left then it is the bi-center of the tree.</p>
+            <br>
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=70%>
+                <tr>
+                    <td width=50%>
+                        <p class=content style="font-size: 150%; padding: 0px 25%; text-align:center; font-family: 'abril_fatfaceregular'; font-weight: bold">PROBLEM <span id=stressout>1</span></p>
+                        <center><img src=center001.jpg height=65% width=auto></center>
+                        <p class=content style="font-size: 120%; padding: 0px 10%; font-family: 'abril_fatfaceregular'; font-weight: bold">SOLUTION</p>
+                        <p class=content style="padding: 0px 10%; text-align:left">At first, we will remove all vertices of degree <span id=stressout>1</span> and also remove their incident edges and get the following tree −</p>
+                        <center><img src=center002.jpg height=65% width=auto></center>
+                        <p class=content style="padding: 0px 10%; text-align:left">Again, we will remove all vertices of degree <span id=stressout>1</span> and also remove their incident edges and get the following tree −</p>
+                        <center><img src=center003.jpg height=65% width=auto></center>
+                        <p class=content style="padding: 0px 10%; text-align:left">Finally we got a single vertex ‘c’ and we stop the algorithm. As there is single vertex, this tree has one center ‘c’ and the tree is a central tree.</p>
+                    </td>
+                    <td width=50%>
+                        <p class=content style="font-size: 150%; padding: 0px 25%; text-align:center; font-family: 'abril_fatfaceregular'; font-weight: bold">PROBLEM <span id=stressout>2</span></p>
+                        <center><img src=bi-center001.jpg height=65% width=auto></center>
+                        <p class=content style="font-size: 120%; padding: 0px 10%; font-family: 'abril_fatfaceregular'; font-weight: bold">SOLUTION</p>
+                        <p class=content style="padding: 0px 10%; text-align:left">At first, we will remove all vertices of degree <span id=stressout>1</span> and also remove their incident edges and get the following tree −</p>
+                        <center><img src=bi-center002.jpg height=65% width=auto></center>
+                        <p class=content style="padding: 0px 10%; text-align:left">Again, we will remove all vertices of degree <span id=stressout>1</span> and also remove their incident edges and get the following tree −</p>
+                        <center><img src=bi-center003.jpg height=65% width=auto></center>
+                        <p class=content style="padding: 0px 10%; text-align:left">Finally, we got two vertices ‘c’ and ‘d’ left, hence we stop the algorithm. As two vertices joined by an edge is left, this tree has bi-center ‘cd’ and the tree is bi-central.</p>
+                    </td>
+                </tr>
+            </table>
+            <br>            
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=70%>
+                <tr>
+                    <td colspan=3><p class=content style="font-size: 120%; padding: 0px 10%; font-family: 'abril_fatfaceregular'; font-weight: bold">EXERCISES</p></td>
+                </tr>
+                <tr>
+                    <td colspan=2><p class=content style="padding: 0px 10%; text-align:left">Guess if it's a central tree or a bi-central tree</p></td>
+                    <td><input type="button" value="Show Answer" onclick="showDiv()" />&nbsp;<input type="button" value="Hide Answer" onclick="hideDiv()" /></td>
+                </tr>
+                <tr>
+                    <td width=33%><center><span id=stressout>1.</span> <img src=exercise3.png height=15% width=auto></center></td>
+                    <td width=33%><center><span id=stressout>2.</span> <img src=exercise1.png height=15% width=auto></center></td>
+                    <td width=33%><center><span id=stressout>3.</span> <img src=exercise2.png height=15% width=auto></center></td>
+                </tr>
+                <tr>
+                    <td id=answerDiv1 style="display:none"><p class=content style="padding: 0px 10%; text-align:left"><span id=stressout>1.</span> Central Tree</p></td>
+                    <td id=answerDiv2 style="display:none"><p class=content style="padding: 0px 10%; text-align:left"><span id=stressout>2.</span> Central Tree</p></td>
+                    <td id=answerDiv3 style="display:none"><p class=content style="padding: 0px 10%; text-align:left"><span id=stressout>3.</span> Bi-Central Tree</p></td>
+                </tr>
+            </table>
+            <br><br>
+            <p style="float:left;padding-left:15%"><a href=TREES-intro.html>Prev lesson</a></p>
+            <p style="float:right;padding-right:15%"><a href=TREES-labeled.html>Next lesson</a></p>
+            <br><br><br><br>
+        </div>
+        
+        <br><br><br>
+        <footer>
+            <p style="color: 48689a; font-family: 'abril_fatfaceregular';font-size: 100%; text-align: center;">© 2019</p>
+        </footer>
+    </body>
+</html>

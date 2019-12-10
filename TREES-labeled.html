@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Labeled & Unlabeled Trees</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS_main.css"/>
+        <link rel="stylesheet" href="CSS_stylesheet.css"/>
+        <link rel="stylesheet" href="CSS_trees.css"/>
+
+    </head>
+    <body style="background-image:url(pinkmap.png); background-size: cover">
+    
+    <script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "500px";
+  			document.getElementById("main").style.marginLeft = "500px";
+  			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft= "0";
+  			document.body.style.backgroundColor = "white";
+		}
+	</script>
+    
+        <div class="topnav">
+		<div id="main">
+                	<span onclick="openNav()"><img src="ICON_newgandt.png" width="85" height="35"></span>
+                	<span style="font-size:62px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span>
+                	<span style="cursor:pointer;color:black">
+                   		<a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                    		<a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                    		<a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+                	</span>
+            	</div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+	<div class="navbar" id="bigscreen">
+            <span class="navbar-logo"><img src="ICON_newgandt.png" width="85" height="35"></span>
+            <span style="cursor:pointer;color:black">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </span>
+            <span class="navbar-right">
+                <a href="#facebook"><img src="ICON_fb.png" width="45" height="45"></a>
+                <a href="#twitter"><img src="ICON_tw.png" width="45" height="45"></a>
+                <a href="#insta"><img src="ICON_in.png" width="45" height="45"></a>
+            </span>
+        </div>
+        
+        <br><br><br>
+        
+        <div class=trees-intro>
+            <p style="font-size: 300%; font-family: 'abril_fatfaceregular'; font-weight: bold; text-align: center"><img src = pinpoint.png width=5% height=auto style="float:middle" class=floating> Labeled & Unlabeled Trees</p>
+            <table align=center style="border: 3px solid black; border-radius:10px; background-color: rgba(134,134,134,0.6)" width=70%>
+                <tr>
+                    <td width=50%>
+                        <p class=content style="font-size: 150%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Labeled Trees</p>
+                        <center><img src=labeled_tree_2_vertex.jpg height=100% width=auto></center>
+                        <p class="content" style="padding: 0px 15%; text-align:center">A labeled tree is a tree the vertices of which are assigned unique numbers from <span id=stressout>1 to n</span>. We can count such trees for small values of <span id=stressout>n</span> by hand so as to conjecture a general formula. The number of labeled trees of <span id=stressout>n</span> number of vertices is <span id=stressout>n<sup>n−2</sup></span>. Two labeled trees are isomorphic if their graphs are isomorphic and the corresponding points of the two trees have the same labels.</p>
+                        <center><img src=labeled_tree_3_vertex.jpg height=auto width=80%></center>
+                        <br><br><br><br><br><br><br><br>
+                    </td>
+                    <td width=50%>
+                        <p class=content style="font-size: 150%; padding: 0px 25%; text-align:left; font-family: 'abril_fatfaceregular'; font-weight: bold">Unlabeled Trees</p>
+                        <center><img src=unlabeled_tree_2_vertex.jpg height=100% width=auto></center>
+                        <p class="content" style="padding: 0px 15%; text-align:center">An unlabeled tree is a tree the vertices of which are not assigned any numbers. The number of labeled trees of n number of vertices is <span id=stressout>(2n)!/(n+1)!n!</span> (nth Catalan number)</p>
+                        <center><img src=unlabeled_tree_3_vertex.jpg height=100% width=auto></center><br>
+                        <center><img src=unlabeled_tree_4_vertex.jpg height=80% width=auto></center>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <p style="float:left;padding-left:15%"><a href=TREES-centers.html>Prev lesson</a></p>
+            <p style="float:right;padding-right:15%"><a href=TREES-rooted.html>Next lesson</a></p>
+            <br><br><br>
+        </div>
+        
+        <br><br><br>
+            
+        <footer>
+            <p style="color: 48689a; font-family: 'abril_fatfaceregular';font-size: 100%; text-align: center;">© 2019</p>
+        </footer>
+    </body>
+</html>
