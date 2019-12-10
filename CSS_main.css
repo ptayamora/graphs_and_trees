@@ -25,12 +25,13 @@ h3 {
 /* Navbar is the navigation bar/menu bar in wider screens */
 .navbar {
   overflow: hidden;
+  background-color: rgba(0,0,0,0.6);
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
     float: left;
-    color: #333;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
